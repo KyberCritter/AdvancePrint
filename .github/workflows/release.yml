@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Build with devkitARM
+        run: |
+          docker run --rm \
+            -v "$PWD:/work" -w /work \
+            devkitpro/devkitarm:latest make
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v3.0.3
+        with:
+          files: libAdvancePrint.a
+          generate_release_notes: true
