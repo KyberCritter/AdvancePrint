@@ -10,7 +10,7 @@ Licensed under the **GNU GPL v3** — see [LICENSE.md](LICENSE.md).
 
 ## Where it came from
 
-AdvancePrint was extracted from GBScribe, a homebrew word processor and pixel-art tool for Game Boy Advance hardware that prints to a real Game Boy Printer. The printer layer started life as the `libgbp` library inside that project. This repository is that layer on its own, renamed AdvancePrint and deliberately decoupled from the app: no dependency on libtonc, libgba, Maxmod, or any project-specific layout or font code.
+AdvancePrint was extracted from GBScribe, my homebrew word processor and pixel-art tool for Game Boy Advance hardware that prints to a real Game Boy Printer. The printer layer started life as a component of that project. This repository is that layer on its own, renamed AdvancePrint and deliberately decoupled from the app. It no longer depends on libtonc, libgba, Maxmod, or any project-specific code.
 
 ## Wiring
 
