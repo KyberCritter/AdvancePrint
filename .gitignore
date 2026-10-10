@@ -1,0 +1,6 @@
+# AdvancePrint build outputs
+/build/
+/libAdvancePrint.a
+/tests/host/bin/
+/tests/host/decoder/*.o
+/tests/host/decoder/gpbdecoder
